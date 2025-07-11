@@ -18,12 +18,10 @@ app.use(cors());
 app.use("/auth", AuthRouter);
 app.use("/products", ProductRouter);
 
-app.listen(() => {
-  console.log(`server is running on https://auth-on-mern.vercel.app`);
-});
 
-// app.listen(PORT,() => {
-//   console.log(`server is running on http://localhost:${PORT}`);
-// });
+
+app.listen(PORT,() => {
+  console.log(`server is running on http://localhost:${PORT}`);
+});
 
 
